@@ -1,1 +1,5 @@
-# Code Kneading
+---
+home: true
+---
+## トップページ
+hogehoge
