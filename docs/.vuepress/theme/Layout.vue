@@ -1,4 +1,5 @@
 <template>
+<v-app> <!-- for Vuetify -->
   <div
     class="theme-container"
     :class="pageClasses"
@@ -54,6 +55,7 @@
 
     <SWUpdatePopup :updateEvent="swUpdateEvent"/>
   </div>
+</v-app>
 </template>
 
 <script>
