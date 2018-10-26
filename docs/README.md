@@ -1,6 +1,6 @@
 ---
 home: true
 ---
-## トップページ
+## 最新記事
 
-[Vuetify Test](./blog/2018/10/vuetify-test.md)
+<PostList />
