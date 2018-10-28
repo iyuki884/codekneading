@@ -1,7 +1,7 @@
 <template>
   <v-container grid-list-md>
     <v-layout row wrap>
-      <v-flex md4 sm6 xs12 v-for="post in posts" :key="post.path">
+      <v-flex md6 sm6 xs12 v-for="post in posts" :key="post.path">
         <PostCard :post="post" />
       </v-flex>
     </v-layout>
