@@ -19,15 +19,12 @@
     </v-img>
 
     <v-card-text>
-      <PostDate />
-      <v-btn
-        class="category"
-        small
-        dark
-        color="blue-grey lighten-2"
+      <PostDate class="mb-2" />
+      <span
+        class="category py-1 px-3"
       >
         {{post.frontmatter.category}}
-      </v-btn>
+      </span>
     </v-card-text>
   </v-card>
 </template>
@@ -60,3 +57,14 @@ export default {
   }
 }
 </script>
+
+<style scoped>
+.post:hover {
+  cursor: default;
+}
+.category {
+  font-size: 13px;
+  color: white;
+  background: grey;
+}
+</style>
