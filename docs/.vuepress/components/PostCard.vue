@@ -1,7 +1,7 @@
 <template>
   <v-card
-    hover
     class="post"
+    hover
   >
     <v-card-title>
       <div>
@@ -36,6 +36,8 @@
 </template>
 
 <script>
+import dateFormatter from '../lib/date'
+
 export default {
   name: 'postCard',
   props: { post: Object },
@@ -49,14 +51,14 @@ export default {
       return img
     },
     createDate () {
-      return this.post.frontmatter.date
+      return dateFormatter.format(this.post.frontmatter.date, 'YYYY-MM-DD')
     },
     lastUpdate () {
-      let date = this.post.frontmatter.update
-      if (!date) {
-        date = this.createDate()
+      const lastUpdate = this.post.frontmatter.update
+      if (!lastUpdate) {
+        return this.createDate()
       }
-      return date
+      return dateFormatter.format(lastUpdate, 'YYYY-MM-DD')
     }
   }
 }
