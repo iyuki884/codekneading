@@ -19,10 +19,7 @@
     </v-img>
 
     <v-card-text>
-      <div class="date">
-        <div>作成日:{{ createDate() }}</div>
-        <div>更新日:{{ lastUpdate() }}</div>
-      </div>
+      <PostDate />
       <v-btn
         class="category"
         small
@@ -63,13 +60,3 @@ export default {
   }
 }
 </script>
-
-<style scoped>
-.post:hover{
-  cursor: default;
-}
-
-.date{
-  font-size: 13px;
-}
-</style>
