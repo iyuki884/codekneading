@@ -1,7 +1,7 @@
 ---
 title: コーヒー焙煎歴もうすぐ1年
 date: 2018-09-16
-update: 2018-10-28
+update: 2018-10-29
 description: 自家焙煎を始めて1年くらい経ったと思ったら……
 category: COFFEE
 image: img/coffee/bolivia.jpg

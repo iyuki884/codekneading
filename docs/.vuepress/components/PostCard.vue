@@ -19,7 +19,10 @@
     </v-img>
 
     <v-card-text>
-      <PostDate class="mb-2" />
+      <PostDate class="mb-2"
+        :create="post.frontmatter.date"
+        :update="post.frontmatter.update"
+      />
       <span
         class="category py-1 px-3"
       >
