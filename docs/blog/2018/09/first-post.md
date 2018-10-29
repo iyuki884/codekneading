@@ -1,7 +1,7 @@
 ---
 title: ブログを書く
 date: 2018-09-02
-update: 2018-10-27
+update: 2018-10-29
 description: ブログを始めました
 category: INFO
 image: img/info/profile_icon.jpg

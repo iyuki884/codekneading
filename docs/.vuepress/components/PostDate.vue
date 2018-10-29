@@ -10,12 +10,16 @@ import dateFormatter from '../lib/date'
 
 export default {
   name: 'postDate',
+  props: {
+    create: String,
+    update: String
+  },
   methods: {
     createDate () {
-      return dateFormatter.format(this.$page.frontmatter.date, 'YYYY-MM-DD')
+      return dateFormatter.format(this.create, 'YYYY-MM-DD')
     },
     lastUpdate () {
-      const lastUpdate = this.$page.frontmatter.update
+      const lastUpdate = this.update
       if (!lastUpdate) {
         return this.createDate()
       }

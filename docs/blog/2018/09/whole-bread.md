@@ -1,7 +1,7 @@
 ---
 title: 全粒粉100%食パンを焼いた
 date: 2018-09-08
-update: 2018-10-27
+update: 2018-10-29
 description: サンドイッチ用に全粒粉の食パンを焼いてみた
 category: BREAD
 image: img/bread/whole_bread.jpg
