@@ -1,0 +1,18 @@
+{
+  "scripts": {
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs"
+  },
+  "dependencies": {
+    "@babel/polyfill": "^7.0.0-rc.1",
+    "css-loader": "^1.0.0",
+    "moment": "^2.22.2",
+    "style-loader": "^0.23.1",
+    "vue": "^2.5.10",
+    "vuetify": "^1.3.0"
+  },
+  "devDependencies": {
+    "@mdi/font": "^3.0.39",
+    "vue-cli-plugin-vuetify": "^0.2.1"
+  }
+}
