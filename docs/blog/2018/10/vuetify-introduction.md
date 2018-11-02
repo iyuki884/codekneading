@@ -1,22 +1,22 @@
 ---
-title: VuePressにVuetifyを導入
 date: 2018-11-01
 update: 2018-11-01
 description: Vuetify導入でハマった点など
 category: DEVELOPMENT
 image: img/development/vuepress-logo.png
+sidebar: auto
 ---
 
-## {{ $page.frontmatter.title }}
+# VuepressにVuetifyを導入
 
-### やりたかったこと
+## やりたかったこと
 Vue.js + Vuetify の開発経験があったのでVuePressでもVuetifyを使えるようにしたかった。
 
-### ハマった点
+## ハマった点
 1. 公式リファレンスなどを見て使えるようになったけど`vuepress build`でエラーになる。
 2. Markdownのコードブロック表示がおかしい
 
-### 解決方法
+## 解決方法
 1. enhanceApp.jsでimportするときに相対パスでnode_modules内を指定するようにしてやればいい。  
 ``` js
  // enhanceApp.js
@@ -31,7 +31,7 @@ import '../../../node_modules/@mdi/font/css/materialdesignicons.css'
 vuetify.cssをdocs内に移動して、不要そうな箇所を削除して使うようにした。これで万事OKかは不明:upside_down_face:
 
 ---
-### 経緯など
+## 経緯など
 Vuetify自体は使ったことあったので、さくっとやろうと考えていたら思いのほか時間を使ってしまいました。  
 
 まずはVuetifyのインストール。
@@ -103,7 +103,7 @@ issueのコメントに
 
 とあるので、バージョンが進めば相対パスの指定が必要なくなりそうですね。
 
-### コードブロックの表示が崩れた
+## コードブロックの表示が崩れた
 これで解決だーと思ってこの記事を書いていたら、なんかコードブロックの表示がおかしいことに気づきました。なんてこったと思い調べてみたらVuetifyのcssが影響していることがわかりました。  
 ~~ひとまず一部スタイルを上書きしてパッと見いい感じに調整しましたが、十分ではなさそうです。
 わかっている課題としては一行が長くなった時に横スクロールバーが表示されるはずが出てこないです。ほかにもあるかもしれないので調査が必要ですが、とりあえずはこれで公開しときます。~~
