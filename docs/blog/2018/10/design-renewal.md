@@ -1,12 +1,11 @@
 ---
-title: ブログデザイン更新
 date: 2018-10-30
 description: vuepressに移行
 category: INFO
 image: img/info/keyboard.jpg
 ---
 
-## ブログデザイン更新
+# ブログデザイン更新
 
 記事を3つ投稿して放置プレイをかましていましたが、細々と作業はしていました。
 
