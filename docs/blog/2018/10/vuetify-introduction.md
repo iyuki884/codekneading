@@ -1,13 +1,13 @@
 ---
 date: 2018-11-01
-update: 2018-11-01
+update: 2018-12-29
 description: Vuetify導入でハマった点など
 category: DEVELOPMENT
 image: img/development/vuepress-logo.png
 sidebar: auto
 ---
 
-# VuepressにVuetifyを導入
+# VuePressにVuetifyを導入
 
 ## やりたかったこと
 Vue.js + Vuetify の開発経験があったのでVuePressでもVuetifyを使えるようにしたかった。
@@ -118,7 +118,7 @@ Vuetifyのフォルダからvuetify.cssをコピーしてきてdocs内へ配置�
 `code`クラスが当たっている箇所が影響していそうなので該当するスタイルをコメントアウト。  
 とりあえず横スクロールバー含め表示されるようになりました。
 
-というこどで、こんな感じになります。
+ということで、こんな感じになります。
 vuetify.cssの中身は[こんな感じ](https://github.com/iyuki884/codekneading/blob/master/docs/.vuepress/theme/styles/vuetify/vuetify.css#L2242)で、一部コメントアウトしています。
 ``` js
  // enhanceApp.js
